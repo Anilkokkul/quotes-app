@@ -1,38 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
+.App h1 {
+  padding: 4vw 0;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(DancingScript-VariableFont_wght.ttf);
+}
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quote {
+  color: white;
+  background-image: url("../public/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  min-height: 30vh;
+  max-width: 500px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+  padding: 3vw;
+}
+.quote p {
+  font-family: myFirstFont;
+  font-size: 2rem;
+}
+.quote h4 {
+  font-family: "Charmonman", cursive;
+  text-decoration: wavy;
+  margin-top: 1vw;
+  font-weight: 900;
+  color: rgb(231, 133, 63);
+}
+button {
+  margin: 2vw;
+  cursor: pointer;
+  padding: 1vw;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #04aa6d;
+  transition: all 0.5s;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  transform: scale(1.05);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Authors {
+  display: inline-block;
+  border: 1px solid black;
+  background-color: #04aa6d;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 5px;
+}
+.Authors a {
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
 }
