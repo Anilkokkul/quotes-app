@@ -31,7 +31,6 @@ function Authors() {
       axios
         .get("https://api.quotable.io/authors")
         .then((data) => {
-          // console.log(data);
           setAuthors(data.data.results);
         })
         .catch((error) => {
