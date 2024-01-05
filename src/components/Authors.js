@@ -63,7 +63,7 @@ function Authors() {
             );
           })
         ) : (
-          <div>Loading...</div>
+          <div className="message">Loading...</div>
         )}
       </div>
     </div>
