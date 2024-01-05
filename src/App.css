@@ -81,8 +81,7 @@ blockquote {
 }
 q {
   font-family: cobaissi;
-  /* font-style: italic; */
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 .Author {
   margin-top: 3vw;
