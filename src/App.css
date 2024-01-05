@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap");
 .App h1 {
-  padding: 4vw 0;
+  padding: 3vw 0;
+  font-size: 40px;
 }
 @font-face {
   font-family: myFirstFont;
@@ -22,9 +23,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 30vh;
-  max-width: 500px;
-  width: 75%;
+  min-height: 50vh;
+  max-width: 800px;
+  width: 90%;
   margin: auto;
   text-align: center;
   border: 1px solid black;
@@ -32,7 +33,7 @@
 }
 .quote p {
   font-family: myFirstFont;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .quote h4 {
   font-family: "Charmonman", cursive;
@@ -41,32 +42,74 @@
   font-weight: 900;
   color: rgb(231, 133, 63);
 }
-button {
+.Authors {
   margin: 2vw;
   cursor: pointer;
   padding: 1vw;
   font-size: large;
   border: none;
-  border-radius: 10px;
+  border-radius: 7px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #04aa6d;
   transition: all 0.5s;
   color: white;
+  text-decoration: none;
+  margin: 15px;
 }
 
-button:hover {
+.Authors:hover {
   transform: scale(1.05);
 }
-.Authors {
-  display: inline-block;
-  border: 1px solid black;
-  background-color: #04aa6d;
-  margin: 10px auto;
-  border-radius: 5px;
-  padding: 5px;
+
+.quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
 }
-.Authors a {
-  text-decoration: none;
-  font-weight: 800;
-  color: white;
+blockquote {
+  height: 100%;
+  background-color: #f5f7faef;
+  padding: 20px;
+  border: 1px solid #ba929245;
+  border-radius: 7px;
+}
+.Author {
+  margin-top: 3vw;
+  background-color: #f5f7faef;
+  text-align: center;
+  min-height: 30vh;
+  border: 1px solid #ba929245;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.Author h4 {
+  margin: 10px 0;
+}
+.Author img {
+  border-radius: 50%;
+  width: 100px;
+}
+.Author h1 {
+  margin-bottom: 10px;
+}
+.Author p {
+  max-width: 700px;
+  margin: 10px auto;
+}
+.quotesList {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.search {
+  width: 80%;
+  max-width: 700px;
+  margin: 10px auto;
+  display: block;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 2px 5px;
+  font-size: 16px;
 }
