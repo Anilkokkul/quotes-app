@@ -6,7 +6,6 @@ function AuthorQuotes() {
   const [quotes, setQuotes] = useState([]);
   const [authorData, setAuthorData] = useState({});
   const { author } = useParams();
-  //   console.log("Author Details", authorData);
 
   useEffect(() => {
     axios
@@ -14,14 +13,13 @@ function AuthorQuotes() {
         `https://api.quotable.io/quotes?author=${encodeURIComponent(author)}`
       )
       .then((data) => {
-        // console.log(data.data);
         setQuotes(data.data.results);
       })
       .catch((error) => {
         alert("Author not found");
         console.log(error);
       });
-  }, []);
+  }, [author]);
 
   useEffect(() => {
     axios
@@ -34,7 +32,7 @@ function AuthorQuotes() {
         alert("Author not found");
         console.log(error);
       });
-  }, []);
+  }, [author]);
 
   return (
     <div className="quotesList">
